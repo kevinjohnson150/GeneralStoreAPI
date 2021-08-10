@@ -15,12 +15,12 @@ namespace GeneralStoreAPI.Models.Data_POCOS.Transaction
         [ForeignKey(nameof(Customer))]
         public int CustomerId { get; set; }
 
-        public virtual Customer Customer { get; set; }
+       // public virtual Customer Customer { get; set; }
 
         [ForeignKey(nameof(Product))]
         public string ProductSKU { get; set; }
 
-        public virtual Product Product { get; set; }
+       // public virtual Product Product { get; set; }
 
         [Required]
         public int ItemCount { get; set; }
