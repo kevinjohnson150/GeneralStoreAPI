@@ -1,11 +1,13 @@
-﻿using System;
+﻿using GeneralStoreAPI.Models.Data_POCOS.Customers;
+using GeneralStoreAPI.Models.Data_POCOS.Products;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
-namespace GeneralStoreAPI.Models.Data_POCOS.Transaction
+namespace GeneralStoreAPI.Models.Data_POCOS.Transactions
 {
     public class Transaction
     {
@@ -15,12 +17,12 @@ namespace GeneralStoreAPI.Models.Data_POCOS.Transaction
         [ForeignKey(nameof(Customer))]
         public int CustomerId { get; set; }
 
-       // public virtual Customer Customer { get; set; }
+        public virtual Customer Customer { get; set; }
 
         [ForeignKey(nameof(Product))]
         public string ProductSKU { get; set; }
 
-       // public virtual Product Product { get; set; }
+        public virtual Product Product { get; set; }
 
         [Required]
         public int ItemCount { get; set; }

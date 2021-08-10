@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace GeneralStoreAPI.Models.Data_POCOS.Customer
+namespace GeneralStoreAPI.Models.Data_POCOS.Customers
 {
     public class Customer
     {
