@@ -26,6 +26,7 @@ namespace GeneralStoreAPI.Models.Data_POCOS.Transactions
 
         [Required]
         public int ItemCount { get; set; }
+
         [Required]
         public DateTime DateOfTransaction { get; set; }
     }
